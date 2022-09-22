@@ -1,0 +1,83 @@
+#about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #about-card {
+    width: 60%;
+    height: 70%;
+    #main-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      #about-container {
+        width: 56%;
+        height: 100%;
+        margin-top: 1.4em;
+        p {
+          color: #8892b0;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 500;
+          font-size: 1.2em;
+        }
+        #tech {
+          display: flex;
+          width: 70%;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px;
+          ul {
+            list-style: none;
+            padding: 0px;
+            li {
+              color: #8892b0;
+              font-family: "Source Sans Pro", sans-serif;
+              font-weight: 500;
+              font-size: 1.2em;
+              margin-bottom: 0.2em;
+              &:before {
+                content: "➤";
+                color: #64ffda;
+                margin-right: 0.6em;
+                font-size: 0.7em;
+              }
+            }
+          }
+        }
+      }
+      #image-container {
+        margin-left: 2em;
+        width: 44%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #image-border {
+          width: 80%;
+          height: 80%;
+          background-color: #0a192f;
+          border: #64ffda 3px solid;
+          position: relative;
+          z-index: 1;
+          .main-image {
+            position: absolute;
+            width: 95%;
+            height: 95%;
+            background-size: cover;
+            left: 2.5%;
+            top: 2.5%;
+            background-image: url("../../../assets/img/me.jpg");
+            z-index: 2;
+            transition: 0.4s cubic-bezier(0.5, 0.03, 0.41, 1);
+            &:hover {
+              filter: grayscale(100%);
+              transform: translate(-2em, -1.5em);
+              transition: 0.4s cubic-bezier(0.5, 0.03, 0.41, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

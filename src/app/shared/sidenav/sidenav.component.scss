@@ -1,0 +1,59 @@
+#sidenav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+  #icons {
+    color: #8892b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .link-icon {
+      color: #8892b0;
+    }
+    .icon {
+      font-size: 25px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      &:hover {
+        color: #64ffda;
+      }
+    }
+  }
+
+  #mail {
+    height: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-lr;
+    #mail-link {
+      color: #8892b0;
+      text-decoration: none;
+      &:hover {
+        color: #64ffda;
+      }
+      font-size: medium;
+      font-family: "Roboto Mono", monospace;
+    }
+  }
+
+  #line-content {
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #line {
+      width: 3%;
+      height: 100%;
+      background-color: #8892b0;
+      border-radius: 50px;
+    }
+  }
+}

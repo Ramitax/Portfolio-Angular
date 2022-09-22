@@ -1,0 +1,20 @@
+
+<mat-expansion-panel
+  *ngIf="this.item"
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"
+>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ this.item.title != null ? this.item.title : 'Title' }}
+      <app-link [link]="this.item.institute_link != null ? this.item.institute_link : ''" [text]="this.item.institute_text != null ? this.item.institute_text : 'Institute'">
+      </app-link>
+    </mat-panel-title>
+    <mat-panel-description>{{ this.item.period != null ? this.item.period : 'Period' }}</mat-panel-description>
+  </mat-expansion-panel-header>
+  <ul *ngIf="item.descriptions != null">
+    <li *ngFor="let description of item.descriptions">
+      {{ description }}
+    </li>
+  </ul>
+</mat-expansion-panel>

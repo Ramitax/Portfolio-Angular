@@ -1,0 +1,17 @@
+<div id="navbar">
+  <app-navbar></app-navbar>
+</div>
+
+<div id="content">
+  <div id="sidenav-left">
+    <app-sidenav [left]="true"></app-sidenav>
+  </div>
+
+  <div class="p-5" id="page">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div id="sidenav-right">
+    <app-sidenav [left]="false"></app-sidenav>
+  </div>
+</div>
