@@ -1,17 +1,19 @@
 <div id="home">
-  <div class="container-fluid" id="home-card" *ngIf="this.presentation">
+  <div class="container-fluid" id="home-card">
     <div id="hi">
       <h3>Hi, my name is</h3>
     </div>
     <div id="name">
-      <h1>{{this.presentation.name}}.</h1>
+      <h1>{{ this.presentation?.name }}.</h1>
     </div>
     <div id="title">
-      <h2>{{this.presentation.title}}</h2>
+      <h2>{{ this.presentation?.title }}</h2>
     </div>
-    <div id="description" >
+    <div id="description">
       <p>
-        I'am a {{this.presentation.area}} with <span>{{this.presentation.experience}} of experience</span> {{this.presentation.description}}
+        I'am a {{ this.presentation?.area }} with
+        <span>{{ this.presentation?.experience }} of experience</span>
+        {{ this.presentation?.description }}
       </p>
     </div>
   </div>

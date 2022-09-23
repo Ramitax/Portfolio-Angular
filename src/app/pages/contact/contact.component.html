@@ -1,8 +1,24 @@
 <div id="contact">
   <div class="container-fluid" id="contact-card">
-    <app-title id="05" title="Contact"></app-title>
-    <div id="main-container">
-
+    <div id="title">
+      <h2>
+        <span>05.</span>
+        What’s Next?
+      </h2>
     </div>
+    <div id="main">
+      <h1>{{ this.contact?.title }}</h1>
+    </div>
+    <div id="description">
+      <p>
+        {{ this.contact?.description }}
+      </p>
+    </div>
+    <a
+      mat-stroked-button
+      color="primary"
+      href="mailto:{{ this.contact?.email }}?Subject=Hello"
+      >Say Hello</a
+    >
   </div>
 </div>

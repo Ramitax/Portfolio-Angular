@@ -1,21 +1,21 @@
-<div id="sidenav" *ngIf="this.social">
+<div id="sidenav">
   <ng-container *ngIf="left; else right">
-    <div id="icons" *ngIf="this.social">
-      <a [href]="this.social.linkedin" class="link-icon" target="_blank">
+    <div id="icons">
+      <a [href]="this.social?.linkedin" class="link-icon" target="_blank">
         <i class="fa-brands fa-linkedin icon hvr-float"> </i>
       </a>
-      <a [href]="this.social.github" class="link-icon" target="_blank">
+      <a [href]="this.social?.github" class="link-icon" target="_blank">
         <i class="fa-brands fa-github icon hvr-float"></i>
       </a>
-      <a [href]="this.social.instagram" class="link-icon" target="_blank">
+      <a [href]="this.social?.instagram" class="link-icon" target="_blank">
         <i class="fa-solid fa-user icon hvr-float"></i>
       </a>
     </div>
   </ng-container>
   <ng-template #right>
     <div id="mail">
-      <a href="mailto:{{this.social.email}}" id="mail-link" class="hvr-float" target="_blank">
-        {{this.social.email}}
+      <a href="mailto:{{this.social?.email}}" id="mail-link" class="hvr-float" target="_blank">
+        {{this.social?.email}}
       </a>
     </div>
   </ng-template>

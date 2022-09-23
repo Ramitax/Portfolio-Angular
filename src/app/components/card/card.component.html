@@ -1,0 +1,19 @@
+<mat-card class="mat-elevation-z4">
+  <mat-card-header>
+    <div id="header">
+      <mat-card-title>{{ this.project?.title }}</mat-card-title>
+      <mat-card-subtitle>{{ this.project?.year }}</mat-card-subtitle>
+    </div>
+    <div id="buttons">
+      <a mat-button class="icon" target="_blank" [href]="this.project?.link">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{ this.project?.description }}
+    </p>
+    <p><span>Tech-Stack:</span> {{ this.project?.technologies }}</p>
+  </mat-card-content>
+</mat-card>

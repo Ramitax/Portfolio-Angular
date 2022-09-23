@@ -8,7 +8,8 @@ import { ComponentsModule } from '../components/components.module';
 import { EducationComponent } from './education/education.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { ProjectComponent } from './project/projectcomponent';
+import { ProjectComponent } from './project/project.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { ProjectComponent } from './project/projectcomponent';
     ComponentsModule,
     MatIconModule,
     MatGridListModule,
+    MatButtonModule
   ],
   declarations: [
     HomeComponent,

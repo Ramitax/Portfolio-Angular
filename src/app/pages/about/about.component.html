@@ -1,39 +1,39 @@
 <div id="about">
   <div class="container-fluid" id="about-card">
     <app-title id="01" title="About Me"></app-title>
-    <div id="main-container" *ngIf="this.about">
+    <div id="main-container">
       <div id="about-container">
         <p>
-          {{this.about.presentation}} {{ this.year - 2015 }} years here I am!
+          {{this.about?.presentation}} {{ this.year - 2015 }} years here I am!
         </p>
         <p>
           Fast forward to today, after much effort, I had the privilege of
           working on
           <app-link
-            [link]="this.about.first_experience_link"
-            [text]="this.about.first_experience"
+            [link]="this.about?.first_experience_link"
+            [text]="this.about?.first_experience"
           ></app-link>
           , and a
           <app-link
-          [link]="this.about.second_experience_link"
-          [text]="this.about.second_experience"
+          [link]="this.about?.second_experience_link"
+          [text]="this.about?.second_experience"
           ></app-link>.
-          {{this.about.description}}
+          {{this.about?.description}}
         </p>
         <p>Here are a few technologies I’ve been working with recently:</p>
         <div id="tech">
           <ul>
-            <li *ngFor="let tech of this.about.first_skills">
+            <li *ngFor="let tech of this.about?.first_skills">
               {{tech}}
             </li>
           </ul>
           <ul>
-            <li *ngFor="let tech of this.about.second_skills">
+            <li *ngFor="let tech of this.about?.second_skills">
               {{tech}}
             </li>
           </ul>
           <ul>
-            <li *ngFor="let tech of this.about.third_skills">
+            <li *ngFor="let tech of this.about?.third_skills">
               {{tech}}
             </li>
           </ul>

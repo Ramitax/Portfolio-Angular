@@ -3,12 +3,10 @@
     <app-title id="04" title="Project"></app-title>
     <div id="main-container">
       <mat-grid-list cols="2" rowHeight="2:1">
-        <mat-grid-tile>1</mat-grid-tile>
-        <mat-grid-tile>2</mat-grid-tile>
-        <mat-grid-tile>3</mat-grid-tile>
-        <mat-grid-tile>4</mat-grid-tile>
-        <mat-grid-tile>5</mat-grid-tile>
-        <mat-grid-tile>6</mat-grid-tile>
+        <mat-grid-tile class="hvr-float" *ngFor="let project of projects">
+          <app-card [project]="project"></app-card>
+        </mat-grid-tile>
+        <app-space></app-space>
       </mat-grid-list>
     </div>
   </div>

@@ -5,7 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { AboutComponent } from './pages/about/about.component';
 import { EducationComponent } from './pages/education/education.component';
-import { ProjectComponent } from './pages/project/projectcomponent';
+import { ProjectComponent } from './pages/project/project.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
