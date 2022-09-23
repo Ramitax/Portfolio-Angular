@@ -5,7 +5,6 @@ import { Education } from '../class/education';
   providedIn: 'root',
 })
 export class EducationService {
-  constructor() {}
 
   university: Education[] = [
     new Education(
@@ -76,6 +75,8 @@ export class EducationService {
       ]
     ),
   ];
+
+  constructor() {}
 
   getUniversity(): Education[] {
     return this.university;

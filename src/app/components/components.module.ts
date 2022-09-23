@@ -6,10 +6,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { LinkComponent } from './link/link.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { SpaceComponent } from './space/space.component';
 
 @NgModule({
   imports: [CommonModule, MatTabsModule, MatExpansionModule],
-  declarations: [LinkComponent, TitleComponent, TabComponent, ListItemComponent],
-  exports: [LinkComponent, TitleComponent, TabComponent, ListItemComponent],
+  declarations: [LinkComponent, TitleComponent, TabComponent, ListItemComponent, SpaceComponent],
+  exports: [LinkComponent, TitleComponent, TabComponent, ListItemComponent, SpaceComponent],
 })
 export class ComponentsModule {}
